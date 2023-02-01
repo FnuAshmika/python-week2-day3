@@ -4,17 +4,11 @@
 
 # 1) Has a function to calculate the square footage of a house
 # Reminder of Formula: Length X Width == Area
-
+def area_house(length,width):
+    area=length * width 
+    return(area)
 # 2) Has a function to calculate the circumference of a circle
-
-from day3_math_module import area_house , circle
-# calculate the circumference of a circle
-#Formated it to show the result upto 3 decimal places
-radius = float(input ('Enter circle radius: '))
-print(f'Circumference of the circle is: {circle(radius):.3f}')
-
-# calculate the square footage of a house
-#Formated it to show the result upto 3 decimal places
-length = float(input('Enter length of your house: '))
-width = float(input('Enter width of your house: '))
-print(f'Area of your house is: {area_house(length,width):.3f}')
+def circle(radius):
+    pi = 3.14
+    circumference = 2*pi*radius
+    return (circumference)
